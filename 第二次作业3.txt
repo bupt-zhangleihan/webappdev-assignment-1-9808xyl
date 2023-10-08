@@ -1,4 +1,4 @@
-我们选择一个常见的 DOM 元素——<input>元素。在 HTML 中，<input>元素被用来创建用户输入的各种类型，包括文本字段(text)，密码字段(password)，单选按钮(radio)，复选框(checkbox)等等。
+我选的一个常见的 DOM 元素——<input>元素。在 HTML 中，<input>元素被用来创建用户输入的各种类型，包括文本字段(text)，密码字段(password)，单选按钮(radio)，复选框(checkbox)等等。
 
 在 MDN 的 DOM 接口清单中，与 <input> 相关的最主要的接口是 HTMLInputElement。这个接口提供了许多可以操作和查询 <input> 元素的方法和属性。
 
