@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>宣某的个人网站</title>
+  <style>
+    /* 在这里添加你的CSS样式 */
+.container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .plant-holder {
+      flex: 1 0 20%;
+      text-align: center;
+      margin: 10px;
+    }
+    #left-container {
+      justify-content: flex-start;
+    }
+    #right-container {
+      justify-content: flex-end;
+    }
+.jar-walls {
+	height: 80%;
+	width: 60%;
+	background: #d1e1df;
+	border-radius: 10%;
+	position: absolute;
+	bottom: 0.5%;
+	left: 20%;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.jar-top {
+	width: 50%;
+	height: 5%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 80.5%;
+	left: 25%;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.jar-bottom {
+	width: 50%;
+	height: 1%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 0%;
+	left: 25%;
+	opacity: 0.7;
+}
+
+.dirt {
+	width: 58%;
+	height: 5%;
+	background: #3a241d;
+	position: absolute;
+	border-radius: 0 0 4rem 4rem;
+	bottom: 1%;
+	left: 21%;
+	opacity: 0.7;
+	z-index: -1;
+}
+ </style>
+</head>
+<body>
+  <header>
+    <h1>罢了小站</h1>
+ 
+    <!-- 在这里添加你的其他标题 -->
+  </header>
+<h2>输入文本并点击按钮</h2>
+<input type="text" id="myText" value="">
+
+
+<button onclick="myFunction()">提交</button>
+<p id="demo"></p >
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = "你输入的文本是: " + x;
+}
+</script>
+  <nav>
+    <!-- 在这里添加你的导航链接 -->
+    <ul>
+      <li>首页</li>
+      <li>关于我</li>
+      <li>作品展示</li>
+      <li>联系我</li>
+    </ul>
+  </nav>
+  <main>
+    <!-- 在这里添加你的主要内容 -->
+    <section>
+      <h2>欢迎来到个人网站！</h2>
+      <p>。。。</p >
+      <h3>My Terrarium</h3>
+   <div id="page">
+	<div id="left-container" class="container">
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant1" src="./images/plant1.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant2" src="./images/plant2.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant3" src="./images/plant3.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant4" src="./images/plant4.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant5" src="./images/plant5.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant6" src="./images/plant6.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant7" src="./images/plant7.png" />
+		</div>
+	</div>
+	<div id="right-container" class="container">
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant8" src="./images/plant8.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant9" src="./images/plant9.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant10" src="./images/plant10.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant11" src="./images/plant11.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant12" src="./images/plant12.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant13" src="./images/plant13.png" />
+		</div>
+		<div class="plant-holder">
+			<img class="plant" alt="plant" id="plant14" src="./images/plant14.png" />
+		</div>
+	</div>
+<div id="terrarium">
+	<div class="jar-top"></div>
+	<div class="jar-walls">
+		<div class="jar-glossy-long"></div>
+		<div class="jar-glossy-short"></div>
+	</div>
+	<div class="dirt"></div>
+	<div class="jar-bottom"></div>
+</div>
+</div>
+
+    </section>
+  </main>
+  <footer>
+    <!-- 在这里添加你的页脚内容 -->
+    <p>版权所有： 2023</p >
+  </footer>
+</body>
+</html>

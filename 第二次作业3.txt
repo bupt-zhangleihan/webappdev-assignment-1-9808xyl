@@ -1,0 +1,26 @@
+我们选择一个常见的 DOM 元素——<input>元素。在 HTML 中，<input>元素被用来创建用户输入的各种类型，包括文本字段(text)，密码字段(password)，单选按钮(radio)，复选框(checkbox)等等。
+
+在 MDN 的 DOM 接口清单中，与 <input> 相关的最主要的接口是 HTMLInputElement。这个接口提供了许多可以操作和查询 <input> 元素的方法和属性。
+
+下面是一个使用 <input> 元素的简单网页示例。这个网页有一个文本输入框和一个按钮，用户可以在文本框中输入文本，然后点击按钮来获取输入的文本并显示在网页上。
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>输入文本并点击按钮</h2>
+<input type="text" id="myText" value="">
+
+
+<button onclick="myFunction()">提交</button>
+<p id="demo"></p >
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = "你输入的文本是: " + x;
+}
+</script>
+</body>
+</html>
+
+
+在这个例子中，我们首先使用 document.getElementById 方法获取了 id 为 myText 的 <input> 元素，然后获取其 value 属性，即用户输入的文本。然后，我们使用 document.getElementById 方法获取 id 为 demo 的 <p> 元素，并将其 innerHTML 属性设置为用户输入的文本。当用户点击按钮时，会触发 myFunction 函数，从而显示用户输入的文本。
